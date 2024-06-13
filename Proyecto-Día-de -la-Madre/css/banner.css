@@ -1,0 +1,55 @@
+#banner{
+    width: 100%;
+    height: 95vh; 
+    color: var(--colorPrimario);
+ }
+ 
+ #banner .bannerItem{
+     height: 100%;
+     width: 100%;
+     position: relative;
+ 
+     background-color: rgb(220, 219, 232);
+     background-image: radial-gradient(transparent 40%, black);
+ }
+ 
+ #banner .bannerItem img {
+     height: 100%;
+     width: 100%;
+ 
+     object-fit: cover;
+ 
+     opacity: .7;
+ }
+ 
+ #banner .bannerItem .text{
+     position: absolute;
+     top: 20%;
+     right: 5%;
+ 
+     text-align: right;
+ }
+ 
+ #banner .bannerItem .text h1{
+     font-size: 3.2rem;
+     margin-bottom: 36px;
+ }
+ 
+ #banner .bannerItem .text p{
+     font-size: 1.5rem;
+     margin-bottom: 64px;
+ 
+ }
+ 
+ #banner .bannerItem .text a{
+     padding: 8px 12px;
+     border: solid var(--colorPrimario) 1px;
+     border-radius: 6px;
+     color: inherit;
+     text-decoration: none;
+     box-shadow: 1px 1px  rgba(0, 0, 0, 0.24);
+ }
+ 
+ #banner .bannerItem .text a:hover{
+     background-color: rgba(159, 159, 159, 0.196);
+ }

@@ -1,0 +1,35 @@
+#nosotros{
+    margin: 64px 32px;
+    padding: 80px;
+    border-radius: 40px;
+    background-color: rgb(232, 241, 241);
+}
+
+#nosotros img {
+    width: 260px;
+    height: 260px;
+    margin: 20px;
+    border-radius: 20px;
+
+    object-fit: cover;
+    opacity: 0.7;
+    background-color: red;
+}
+#nosotros img:first-of-type{
+    float: left;
+    margin-top: 0;
+}
+#nosotros img:last-of-type{
+    float: right;
+    clear: left;
+    margin-top: 45px;
+
+}
+#nosotros h1{
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+#nosotros h1:last-of-type{
+    clear: left;
+    margin-top: 40px;
+}

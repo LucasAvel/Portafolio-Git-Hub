@@ -1,0 +1,25 @@
+/*FAQS*/
+#faqs{
+    padding: 0 116px;
+}
+#faqs h1{
+    font-size: 1.8rem;
+}
+#faqs .faq{
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: solid 1px var(--colorPrimario);
+}
+#faqs .faq label{
+    font-size: 1.4rem;
+}
+
+#faqs .faq label span{
+    font-size: 1.5em;
+    margin-right: 8px;
+    display: inline-block;
+    transform: scaleX(1.4) translateY(1px);
+}
+#faqs .faq .body{
+   padding: 15px 0 35px 35px; 
+}

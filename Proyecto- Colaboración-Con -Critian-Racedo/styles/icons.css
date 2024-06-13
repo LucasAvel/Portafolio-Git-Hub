@@ -1,0 +1,43 @@
+.btn{
+    --color: var(--light);
+    --bg: var(--second);
+    position: relative;
+    z-index: 1;
+    border: 1px solid var(--color);
+    color: var(--color);
+    background-color: var(--bg);
+}
+[class*="icon-"]::before{
+    font-size: var(--icon);
+}
+.btn:hover{
+    --color: var(--second);
+    --bg: var(--light);
+}
+.menu-open::before{
+    content: '\2630';
+}
+.menu-close::before{
+    content: '\00d7';
+}
+.icon-home::before{
+    content: '🏠'
+}
+.icon-about::before{
+    content: '🌁'
+}
+.icon-globe::before{
+    content: '🌐';
+}
+.icon-book::before{
+    content: '📚';
+}
+.icon-business::before{
+    content: '💻';
+}
+.icon-sheet::before{
+    content: '📄';
+}
+.icon-contact::before{
+    content: '🧑‍💼';
+}

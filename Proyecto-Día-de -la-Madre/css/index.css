@@ -1,0 +1,25 @@
+/*FUENTES*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+/*GLOBAL*/
+@import url("global.css");
+/*HEADER*/
+@import url("header.css");
+/*HEADER NAV*/
+@import url("header-nav.css");
+/*HEADER DESPLEGABLE*/
+@import url("header-desplegable.css");
+
+/*BANNER*/
+@import url("banner.css");
+/*BANNER*/
+@import url("galeria.css");
+/*NOSOTROS*/
+@import url("nosotros.css");
+/*FAQS*/
+@import url("faqs.css");
+
+/*logIn*/
+@import url("login.css");
+/*Extras*/
+@import url("extras.css");
+

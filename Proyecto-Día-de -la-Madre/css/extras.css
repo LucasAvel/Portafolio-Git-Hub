@@ -1,0 +1,20 @@
+#whatsappContainer{
+    height: 64px;
+    width: 64px;
+    /* padding: 10px; */
+
+    position: fixed;
+    right: 28px;
+    bottom: 28px;
+
+    border-radius: 50%;
+
+    /* background-color: var(--colorPrimario); */
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+}
+#whatsappContainer img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

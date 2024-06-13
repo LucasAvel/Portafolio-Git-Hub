@@ -1,0 +1,21 @@
+
+header.principal nav .desplegableProductos{
+    padding: 8px 0;
+    position: fixed;
+    top: 64px;
+    right: 25px;
+    background-color: #095B5D;
+
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+header.principal.top nav .desplegableProductos{
+    background-color: rgba(255, 255, 255, 0.906);
+
+}
+
+header.principal nav .desplegableProductos a{
+    padding: 12px 20px;
+    display: block;
+
+}

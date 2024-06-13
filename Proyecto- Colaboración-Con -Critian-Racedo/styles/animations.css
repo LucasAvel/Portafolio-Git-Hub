@@ -1,0 +1,48 @@
+/* Aparicion de elementos */
+@keyframes appearFromLeft {
+    from{
+        transform: translate(-50%);
+        opacity: 0;
+    }
+}
+@keyframes appearFromRight{
+    from{
+        transform: translate(50%);
+        opacity: 0;
+    }
+}
+
+/* Agrandar iconos */
+@keyframes expand { 
+    to{
+        transform: scale(1.2);
+    }
+}
+/* Desplazamiento de Fondo */
+@keyframes translate{
+    to{
+        background-position: 0%;
+    }
+}
+/* Rotation */
+@keyframes rotate {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* Animacion de salto */
+@keyframes move {
+    from{
+        transform: 
+            rotate(-30deg)
+            translateY(-.5rem);
+    }
+    to{
+        transform: 
+            rotate(30deg)
+            translateY(-.5rem);
+    }
+    
+}
+

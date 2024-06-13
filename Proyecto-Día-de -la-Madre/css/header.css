@@ -1,0 +1,59 @@
+header.principal{
+    height: 64px;
+    width: 100%;
+    padding: 0 32px;
+
+    position: fixed;
+    top: 0;
+    z-index: 900;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+    vertical-align:text-bottom;
+
+    border-bottom: none;
+    background: linear-gradient(
+        90deg,
+        #053536 25%,
+        #0a6567
+    );
+    color: var(--colorSecundario);
+
+    transition-property: background, color;
+    transition-duration: 1s;
+}
+
+header.principal.top{
+    border-bottom: solid 1px var(--colorPrimario);
+    background: transparent;
+    color: var(--colorPrimario);
+}
+
+header.principal h1{
+    font-size: 2.2rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header.principal nav > :last-child{
+    background-color: #f0f4f5;
+    color: #0A6466;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    /* transition-property: background, background-color, color; */
+    transition-duration: .9s;
+}
+
+header.principal.top nav > :last-child{
+    border: solid 2px var(--colorPrimario);
+    color: inherit;
+    background: inherit;
+}

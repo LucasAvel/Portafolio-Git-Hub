@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" 
+        content="
+            width=device-width, 
+            initial-scale=1,
+            maximum-scale=3">
+    <title>Portfolio</title>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <!-- Cabecera: Contenido Introductorio -->
+    <header id="header">
+        <img src="assets/icon/cr.svg" alt="" class="portrait">
+        <!-- Inicio -->
+        <div class="header">
+            <h1>Lucas Aveldaño Proyecto con Cristian Racedo</h1>
+            <p>
+                Bienvenidos a mi portafolios, <strong>desarrollado conjuntamente con los alumnos del curso de maquetado avanzado</strong> de <em>EducacionIT</em>
+            </p>
+        </div>
+        <video class="cover" autoplay muted loop>
+            <source src="assets/media/scar-tissue.webm">
+            <source src="assets/media/scar-tissue.mp4">
+            <p>
+                Lo sentimos pero tu navegador NO es compatible con este elemento, podes descargar el contenido desde el siguiente <a href="assets/media/scar-tissue.mp4">link</a>
+            </p>
+        </video>
+    </header>
+    <!-- Navegacion: Indice de contenidos -->
+    <nav>
+        <ul class="nav">
+            <li><a href="#" class="logo" title="Lucas Aveldaño"></a></li>
+            <li><a href="#" class="icon-globe">idioma</a>
+                <ul>
+                    <li><a href="index.html">english</a></li>
+                    <li><a href="index-es.html">español</a></li>
+                </ul>
+            </li>
+        </ul>
+        <button class="btn menu-open"></button>
+        <ul class="menu">
+            <li><a href="#header" class="icon-home active">Inicio</a></li>
+            <li><a href="#about" class="icon-about">Sobre mi</a></li>
+            <li><a href="#study" class="icon-book">Estudios</a></li>
+            <li><a href="#jobs" class="icon-business">Trabajos</a></li>
+            <li><a href="#projects" class="icon-sheet">Proyectos</a></li>
+            <li><a href="#contact" class="icon-contact">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- Contenido: Relevante para el usuario -->
+    <main class="container">
+        <!-- Sobre mi -->
+        <section id="about">
+            <header class="header">
+                <h2>Sobre mi</h2>
+            </header>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, atque quod natus repellat eum ullam facere magni nulla amet possimus ratione inventore voluptate, veniam numquam minima deleniti quae provident! Quis quos a aperiam id magni laboriosam atque libero sunt architecto, temporibus ipsum, harum sed vero aspernatur voluptas eos praesentium consequuntur enim odio dolore doloribus earum, accusamus maiores! Iure rerum necessitatibus voluptatem molestias quibusdam nemo quasi unde doloremque libero repellat cumque quae aspernatur tempora magnam, veritatis architecto! Tempore, nam porro numquam repudiandae, quibusdam eveniet ipsam beatae culpa natus veniam reprehenderit mollitia. Optio, quos! Soluta ipsam cupiditate cum libero animi voluptates quod?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facilis impedit officiis adipisci? Quae repudiandae cumque voluptate impedit ut ducimus eveniet dolor veniam eius in autem temporibus accusamus a excepturi libero, aut necessitatibus, illo vero cupiditate recusandae cum id error quisquam. Architecto, eius aut et autem ab officia facilis excepturi perferendis tempore corporis nam expedita quasi laudantium ut soluta labore! Quis quod temporibus consequatur nemo nesciunt. Voluptate fugiat, expedita a placeat numquam error assumenda maxime. Sint harum sunt repudiandae atque!
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, vero animi. Cumque cum facilis asperiores voluptatibus officiis dignissimos amet rem inventore nisi, blanditiis dolores magnam? Assumenda aliquid ea officiis quaerat explicabo quis soluta sapiente animi nisi magnam nostrum quia quod reiciendis veniam asperiores recusandae harum enim, porro excepturi amet earum temporibus sequi aliquam. Quis harum amet quas quasi quia veritatis, hic pariatur tenetur sint corrupti voluptatem at nesciunt, dignissimos eos id rerum modi recusandae numquam velit tempore, odit nihil atque. Neque, quia quo? Voluptate ipsum suscipit optio veniam inventore in accusamus, illo consequuntur neque quidem reiciendis, molestias soluta velit possimus harum voluptatem cumque id. Pariatur eum ipsum nesciunt unde excepturi esse neque nobis in voluptatibus assumenda? Eum natus saepe dolorem!
+            </p>
+        </section>
+        <!-- Estudios -->
+        <section id="study">
+            <header class="header">
+                <h2>Estudios</h2>
+            </header>
+            <div class="container grid auto medium">
+                <article class="card ubuntu-bg">
+                    <header class="card-header">
+                    <h3 class="card-title">HTML</h3>
+                </header>
+                    <p>
+                        Lenguaje de marcado de hipertexto utilizado para definir la jerarquia y la funcion que cumple cada elemento dentro de la pagina web mediante el uso etiquetas.
+                    </p>
+                    <address class="card-footer">
+                        <a href="https://www.w3.org" target="_blank">w3c</a>
+                    </address>
+                </article>
+                <article class="card ubuntu-bg">
+                    <header class="card-header">
+                    <h3 class="card-title">CSS</h3>
+                </header>
+                    <p>
+                        Las hojas de estilo en cascada corresponden a un lenguaje de diseño grafico, utilizado para definir el aspecto y disposicion de los elementos de la pagina web.
+                    </p>
+                    <address class="card-footer">
+                        <a href="https://whatwg.org" target="_blank">whatwg</a>
+                    </address>
+                </article>
+                <article class="card ubuntu-bg">
+                    <header class="card-header">
+                    <h3 class="card-title">JS</h3>
+                </header>
+                    <p>
+                        Lenguaje de programacion interpretado por el navegador y multiparadigma, utilizado para brindar dinamismo y logica a las paginas web. Se caracteriza por ser asincrono.
+                    </p>
+                    <address class="card-footer">
+                        <a href="https://developer.mozilla.org" target="_blank">mozilla</a>
+                    </address>
+                </article>
+                <article class="card ubuntu-bg">
+                    <header class="card-header">
+                        <h3 class="card-title">SQL</h3>
+                    </header>
+                    <p>
+                        Lenguaje de consulta estructurada utilizado por los motores de base de datos y que permite de manera sencilla la definicion y solicitud de estructuras de datos en el servidor.
+                    </p>
+                    <address class="card-footer">
+                        <a href="" target="_blank">oracle</a>
+                    </address>
+                </article>
+                <article class="card ubuntu-bg">
+                    <header class="card-header">
+                        <h3 class="card-title">PHP</h3>
+                    </header>
+                    <p>
+                        El preprocesador de Hipertexto es un lenguaje de programacion de tipado dinamico y orientado a objetos, desarrollado para realizar paginas web dinamicas.
+                    </p>
+                    <address class="card-footer">
+                        <a href="" target="_blank">php.org</a>
+                    </address>
+                </article>
+                <article class="card ubuntu-bg">
+                    <header class="card-header">
+                        <h3 class="card-title">Python</h3>
+                    </header>
+                    <p>
+                        Lenguaje de programacion multiparadigma y de un solo hilo, que abarca muchas areas como la robotica y se caracteriza por manejar el codigo segun los niveles de sangrado.
+                    </p>
+                    <address class="card-footer">
+                        <a href="" target="_blank">py</a>
+                    </address>
+                </article>
+                <article class="card ubuntu-bg">
+                    <header class="card-header">
+                        <h3 class="card-title">GIT</h3>
+                    </header>
+                    <p>
+                        Sistema de control de versiones utilizado para registrar los cambios realizados durante el desarrollo de un proyecto, funciona mediante la implementacion de un grafo dirigido aciclico.
+                    </p>
+                    <address class="card-footer">
+                        <a href="" target="_blank">git scm</a>
+                    </address>
+                </article>
+            </div>
+        </section>
+        <!-- Trabajos -->
+        <section id="jobs">
+            <header class="header">
+                <h2>Trabajos</h2>
+            </header>
+            <div class="container">
+                <div class="rotate">
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Proyectos -->  
+        <section id="projects" class="p-relative">
+            <header class="header">
+                <h2>Proyectos</h2>
+            </header>
+            <div class="container">
+                <!-- Indicadores -->
+                <div class="indicators p-absolute">
+                    <button class="active"></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </div>
+                <!-- Galeria -->
+                <ul class="gallery unstyled">
+                    <li class="cover osx-bg active">
+                        <p><strong class="title">osx-catalina-night</strong></p>
+                    </li>
+                    <li class="cover osx-bg">
+                        <p><strong class="title">osx-catalina</strong></p>
+                    </li>
+                    <li class="cover osx-bg">
+                        <p><strong class="title">osx-el-capitan</strong></p>
+                    </li>
+                    <li class="cover osx-bg">
+                        <p><strong class="title">osx-high-sierra</strong></p>
+                    </li>
+                    <li class="cover osx-bg">
+                        <p><strong class="title">osx-leopard</strong></p>
+                    </li>
+                    <li class="cover osx-bg">
+                        <p><strong class="title">osx-lion</strong></p>
+                    </li>
+                    <li class="cover osx-bg">
+                        <p><strong class="title">osx-mavericks</strong></p>
+                    </li>
+                    <li class="cover osx-bg">
+                        <p><strong class="title">osx-mojave-night</strong></p>
+                    </li>
+                    <li class="cover osx-bg">
+                        <p><strong class="title">osx-mojave</strong></p>
+                    </li>
+                    <li class="cover osx-bg">
+                        <p><strong class="title">osx-monterrey-dark</strong></p>
+                    </li>
+                </ul>
+                <!-- Controls -->
+                <button class="gallery-prev p-absolute top-0 bottom-0 left-0">&lt;</button>
+                <button class="gallery-next p-absolute top-0 bottom-0 right-0">&gt;</button>
+            </div>
+        </section>    
+    </main>
+    <!-- Pie de Pagina: Contenido Complementario -->
+    <footer id="footer" class="p-relative">
+        <!-- Mapa de Contacto -->
+        <iframe class="map cover"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.069937068758!2d-58.37812478548698!3d-34.602392980459804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacc473596c3%3A0x568d6d5f7f1f535d!2sEducaci%C3%B3nIT!5e0!3m2!1ses-419!2sar!4v1669741458662!5m2!1ses-419!2sar" loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <button class="btn top-5 right-5 map-open"></button>
+        <!-- Formulario de Contacto -->
+        <form id="contact" action="">
+            <h2>Consulta lo que necesites</h2>
+            <label for="contact_name">Ingrese su Nombre</label>
+            <input 
+                id="contact_name"
+                name="name"
+                type="text" 
+                placeholder="Lucas Aveldaño"
+                minlength="3" 
+                maxlength="50"
+                required>
+            <div class="valid">
+                Coloque entre 3 y 50 caracteres utilizando solamente letras
+            </div>
+            <label for="contact_email">Ingrese su Correo</label>
+            <input 
+                id="contact_email" 
+                name="email"
+                type="email" 
+                placeholder="lucas.avel@outlook.com"
+                minlength="8" 
+                required>
+            <div class="valid">
+                Utilice una direccion de al menos 8 caracteres con el formato "usuario@servidor"
+            </div>
+            <label for="contact_phone">Ingrese su Telefono</label>
+            <input 
+                id="contact_phone" 
+                name="phone"
+                type="phone" 
+                placeholder="(5411)3578-9881"
+                minlength="6"
+                maxlength="20"
+                required>
+            <div class="valid">
+                Coloque la caracteristica entre parentesis y un guion cada 3 a 6 digitos
+            </div>
+            <label for="contact_consult">Ingrese su Consulta</label>
+            <textarea 
+                id="contact_consult" 
+                name="consult" 
+                placeholder="Buenas, necesito realizar una consulta..."
+                minlength="30" 
+                maxlength="1000" 
+                required></textarea>
+            <button class="btn">Enviar</button>
+        </form>
+        <!-- Redes sociales -->
+        <section class="social">
+            <h2>Redes sociales</h2>
+            <a class="linkedin" 
+                href="https://linkedin.com" 
+                title="seguime en linkedin"
+                target="_blank">
+            </a>
+            <a class="whatsapp" 
+                href="https://whatsapp.com" 
+                title="mensajeame por whatsapp"
+                target="_blank">
+            </a>
+            <a class="youtube" 
+                href="https://youtube.com" 
+                title="suscribiste a mi canal de youtube"
+                target="_blank">
+            </a>
+            <a class="github" 
+                href="https://github.com/c215714n/EducacionIT/tree/mav-m14" 
+                title="mira mis repos de github"
+                target="_blank">
+            </a>
+        </section>
+        <p class="copy">&copy;2022 Todos los derechos reservados</p>
+    </footer>
+    <!-- Logica JS -->
+    <script src="scripts/index.js"></script>
+</body>
+</html>

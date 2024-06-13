@@ -1,0 +1,185 @@
+// Variables: Valores que se almacenan y pueden cambiar
+    // Imagenes
+    $path: '../assets/icon';
+    $social:
+        'facebook',
+        'github',
+        'instagram',
+        'linkedin',
+        'twitter',
+        'whatsapp',
+        'youtube';
+    $position: static, relative, absolute, sticky, fixed;
+    $p_type: top, left, right, bottom;
+    // Atributos
+    $colors: 
+        primary     #448,
+        secondary   #c36,
+        light       #eee,
+        dark        #333,
+        midgray     #666,
+        success     #284,
+        warning     #da3,
+        danger      #c33,
+        info        #36c;
+    $attributes:
+        text        color,
+        bg          background-color,
+        border      border-color,
+        outline     outline-color,
+        shade       --shade,
+        shadow      --shadow,
+        deco        text-decoration-color;
+    // Tamaños 
+    $col: 24;
+    $media: 
+        sm    576px   540px,
+        md    768px   720px,
+        lg    992px   960px,
+        xl   1200px  1140px,
+        xxl  1400px  1320px;
+// Mixin: Estilos que reciben parametros y se anidan
+@mixin normalize($m:0, $p:0, $b:0, $ba:border, $ma:margin, $pa:padding){
+    #{$ma}:$m;
+    #{$ba}:$b;
+    #{$pa}:$p;
+}
+@mixin pseudo($val){
+    &::before{ content: $val; }
+}
+@mixin transition($duration:.5s, $timing: ease, $delay: 0s, $prop: all){
+    transition: $prop $duration $timing $delay;
+}
+// Loops: Estilos que se repiten en base a una condicion
+/* Iconos Redes sociales */
+@each $icon in $social{
+    .#{$icon}{ --bg: url('#{$path}/#{$icon}.svg'); } 
+}
+/* Posiciones de Elementos*/
+@each $p in $position{
+    .p-#{$p}{ position: $p; }
+}
+@each $p in $p_type{
+@for $i from 0 through 20{
+    .#{$p}-#{$i * 5}{
+        #{$p}: $i * 5%;
+} } }
+/* Atributos Colores */
+@each $prop, $attr in $attributes{
+@each $cname, $cval in $colors{
+    .#{$prop}-#{$cname}{
+        #{$attr}: $cval;
+} } }
+/* Sistema de Grillas responsive */
+@each $vn, $vw, $vmax in $media{
+@media screen and (min-width: $vw){
+    .container, .container-#{$vn}{ max-width: $vmax; }
+@for $i from 1 through $col{
+    .col-#{$vn}-#{$i}{ width: percentage($i/$col); }
+} } }
+// Hidden Styles: Estilos que no aparecen en la compilacion
+%icon{
+    --color: #ccc;
+    --position: center;
+    --size: 2.25rem;
+    @include normalize(1rem .25rem, inline-block, .5rem, border-radius, $pa: display);
+    min-width: 4rem;
+    min-height: 4rem;
+    background: var(--color) var(--bg) var(--position)/var(--size) no-repeat;
+    transition: all .25s ease-in;
+    &:hover{
+        --color: #eee;
+        --size: 3rem;
+        box-shadow: 0 .25rem .5rem #333;
+        transform: 
+            translateY(-.25rem)
+            rotate(360deg)
+            scale(1.1);
+    }
+}
+.gradient{
+    background-image: linear-gradient(
+        rgba(236,236,236, .3),
+        rgba(51,51,51, .3)
+    )
+}
+.hidden{
+    max-height: 0;
+    overflow: hidden;
+}
+.show{
+    max-height: 100vh;
+    font-weight: bold;
+    padding: .5rem;
+}
+// Nesting: Anidacion de estilos para la creacion de selectores
+#footer{
+    @include normalize($p: 5rem 0 0);
+    .map{
+        @include normalize;
+        &.active{ 
+            @extend .p-fixed; 
+            opacity: .9;
+            z-index: 1;
+        }
+        &-open{
+            @include pseudo('+');
+            @extend .p-absolute;
+            z-index: 0;
+        }
+        &-close{
+            @include pseudo('-');
+            @extend .p-fixed;
+        }
+        & + .btn{
+            font-size: 1.5rem;
+            min-width: 2.5rem;
+        }
+    }
+    #contact{
+        @include normalize(1rem auto, 1.5rem 1rem, .5rem, border-radius);
+        @extend .container-md, .col-sm-20, .col-md-16, .col-lg-12, .bg-light, .gradient, .text-primary;
+        display: grid;
+        label{
+            margin-top: .5rem;
+        }
+        input,
+        textarea,
+        select{
+            @include normalize(none, .5rem 1rem, 1.5px solid,$ma: outline);
+            font-size: 1rem;
+            @include transition($timing: ease-in);
+            &:focus{
+                @extend .shadow-primary;
+                box-shadow: 0 .2rem .5rem var(--shadow);
+                & + .valid{ @extend .show; }
+            }
+            &:valid{
+                @extend .border-success, .shadow-success;
+                & + .valid{ @extend .text-success; }
+            }
+            &:not(:placeholder-shown):invalid{
+                @extend .border-danger, .shadow-danger;
+                & + .valid{ @extend .text-danger; }
+            }
+        }
+        .btn{
+            @include normalize(.5rem 0 1rem auto, .5rem 1rem, uppercase, text-transform);
+            z-index: 0;
+        }
+    }
+    .valid{ 
+        @include transition($timing: ease-out);
+        @extend .hidden; 
+    }
+    .social{
+        text-align: center;
+        a{
+            @extend %icon;
+        }
+    }
+    .copy{
+        @include normalize($p: 1rem);
+        @extend .text-light, .bg-primary, .gradient;
+    }
+}

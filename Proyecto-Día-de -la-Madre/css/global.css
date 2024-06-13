@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, Calibri, sans-serif;
+}
+
+body{
+    --colorPrimario: rgb(5, 53, 54);
+    --colorSecundario: rgb(246, 251, 251);
+}
+
+
+/*Desplegable*/
+.collapse-checkbox{
+    display: none;
+}
+
+.collapse-checkbox + .collapse-target{
+    display: none;
+}
+
+.collapse-checkbox:checked + .collapse-target{
+    display: block;
+}
